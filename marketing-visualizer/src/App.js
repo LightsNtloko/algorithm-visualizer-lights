@@ -1,4 +1,4 @@
-import react from "react";
+import React, { useState } from "react";
 
 import NavBar from "./utils/navbar";
 import { Route } from "react-router-dom";
@@ -16,16 +16,16 @@ import Filling from "./Filling/Filling";
 
 // Stylesheets
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.scss";
+import "./App.css";
 import BackBar from "./utils/backbar";
 
 const searchCombined = () => {
   return (
     <div>
-      <BackBar />
+      <backBar />
       <LinearSearch />
       <BinarySearch />
-    </div>
+    <div>
   );
 };
 
@@ -38,7 +38,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-	<NavBar />
+        <NavBar />
 	<Route exact path="/" component={IndexTable} />
 	<Route path="/sorting" component={SortingVisualiser} />
 	<Route path="/searching" component={searchCombined} />

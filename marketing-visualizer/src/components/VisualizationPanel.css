@@ -1,0 +1,15 @@
+.visualizationPanel {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 300px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.bar {
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
